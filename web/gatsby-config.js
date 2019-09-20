@@ -12,6 +12,15 @@ module.exports = {
         postCssPlugins: [require("tailwindcss"), require("autoprefixer")]
       }
     },
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Paulo Baptista`,
+        short_name: `Paulo Baptista`,
+        start_url: `/`,
+        icon: `src/images/icon.png`,
+      }
+    }
   ]
 }
