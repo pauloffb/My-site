@@ -11,6 +11,7 @@ module.exports = {
       options: {
         postCssPlugins: [require("tailwindcss"), require("autoprefixer")]
       }
-    }
+    },
+    `gatsby-plugin-react-helmet`
   ]
 }
