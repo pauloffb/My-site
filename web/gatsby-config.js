@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-        postCssPlugins: [require("tailwindcss"), require("autoprefixer")]
-      }
+        postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
+      },
     },
     `gatsby-plugin-react-helmet`,
     {
@@ -20,7 +20,13 @@ module.exports = {
         short_name: `Paulo Baptista`,
         start_url: `/`,
         icon: `src/images/icon.png`,
-      }
-    }
-  ]
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-439L9YL5KQ",
+      },
+    },
+  ],
 }
